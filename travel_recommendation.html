@@ -2,55 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Health Analysis Data</title>
-  <link rel="stylesheet" href="./travel_recommendation.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outdoor Explore</title>
+  <!-- Font Awesome for Social Media & Search Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="travel_recommendation.css">
 </head>
 <body>
-   <nav><h1>Dream Getaways</h1>
-<ul>
-  <li><a href="./index.html" id="home">Home </a></li>
-  <li><a href="./health_contact.html" id="contact">Contact Us </a></li>
-  <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword">  </li>
-  <li><button id='btnSearch'>Search</button>
-  </li>
 
-</ul>
-</nav>
-<div class="container">
-<div class="analysisForm">
-<h1>Healthcare Data Analysis</h1>
-<div>
-<label for="name">Name:</label>
-<input type="text" id="name">
-</div>
-<div>
-<label>Gender:</label>
-<label for="male">Male</label>
-<input type="radio" name="gender" id="male" value="Male">
-<label for="female">Female</label>
-<input type="radio" name="gender" id="female" value="Female">
-</div>
-<div>
-<label for="age">Age:</label>
-<input type="number" id="age">
-</div>
-<div>
-<label for="condition">Condition:</label>
-<select id="condition">
-  <option value="">Select condition</option>
-  <option value="Diabetes">Diabetes</option>
-  <option value="Thyroid">Thyroid</option>
-  <option value="High Blood Pressure">High Blood Pressure</option>
-</select>
-</div>
-<button id="addPatient">Add Patient</button>
-<h2>Analysis Report</h2>
-<div id="report"></div>
-</div>
-<div class="searchCondition">
-    <div id="result"></div>
-</div>
-</div>
-<script src="./health_analysis.js"></script>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="logo">
+        <i class="fa-solid fa-plane-departure"></i>
+        <span>Outdoor Explore</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    
+    <div class="search-container">
+      <div class="search-input-wrapper">
+        <input type="text" placeholder="Enter a destination or keyword">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      </div>
+      <button class="btn btn-search">Search</button>
+      <button class="btn btn-clear">Clear</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <!-- Hero Content Box -->
+    <div class="hero-content">
+      <h1>EXPLORE DREAM<br>DESTINATION</h1>
+      <p>
+        The Outdoor Trail Guide helps adventurers discover breathtaking hiking paths
+         and remote nature spots through an intuitive, interactive map interface.
+          Users can search by mountain ranges, forest trails, difficulty levels, 
+          or specific park names to reveal detailed route elevation, trailheads, 
+          and real-time weather alerts. The platform dynamically renders data from a 
+          community-managed database to keep every journey safe and clear. 
+          It offers a seamless way to plan your next wilderness escape.
+      </p>
+      <a href="#" class="btn btn-book">Book Now</a>
+    </div>
+  </header>
+
 </body>
 </html>

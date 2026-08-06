@@ -1,185 +1,178 @@
-/* Basic CSS for the navigation bar */
-
-*{
+/* Reset & Base Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-nav {
-    background-color: #f0f0f0;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #0d1117;
+    color: #ffffff;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #06232b;
+    padding: 12px 40px;
+  }
+  
+  .nav-left {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    gap: 40px;
   }
   
-  nav ul {
-    list-style-type: none;
-    /* padding: 0; */
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
     font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
   }
   
-  /* Basic CSS for the form elements */
-  body {
-    font-family: Arial, sans-serif;
-    /* margin: 20px; */
+  .logo i {
+    font-size: 26px;
   }
   
-  h1 {
-    margin-bottom: 20px;
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
   }
   
-  div {
-    margin-bottom: 10px;
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
   }
   
-  label {
-    display: inline-block;
-    width: 100px;
+  .nav-links a:hover {
+    color: #00a896;
   }
   
-  input[type="text"],
-  input[type="number"],
-  select {
-    width: 200px;
-    padding: 5px;
+  /* Search Area */
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   
-  button {
-    padding: 7px 15px;
-    background-color: #4CAF50;
-    color: white;
+  .search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input-wrapper input {
+    padding: 8px 35px 8px 15px;
+    border-radius: 20px;
     border: none;
+    outline: none;
+    width: 260px;
+    font-size: 14px;
+  }
+  
+  .search-input-wrapper .search-icon {
+    position: absolute;
+    right: 12px;
+    color: #00a896;
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Basic CSS for the report section */
-  h2 {
-    margin-top: 30px;
-  }
-  
-  #report,#result {
-    padding: 10px;
-    max-width: 400px;
-    word-wrap: break-word;
-  }
-#result{
-  height: 400px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-  #result img{
-    width: 200px;
-    height: 100px;
-  }
-  /* Basic CSS for the navigation bar */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-nav {
-    background-color: #f0f0f0;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-  }
-  
-  nav ul {
-    list-style-type: none;
-    /* padding: 0; */
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  /* Basic CSS for the form elements */
-  body {
-    font-family: Arial, sans-serif;
-    /* margin: 20px; */
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  div {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: inline-block;
-    width: 100px;
-  }
-  
-  input[type="text"],
-  input[type="number"],
-  select {
-    width: 200px;
-    padding: 5px;
-  }
-  
-  button {
-    padding: 7px 15px;
-    background-color: #4CAF50;
-    color: white;
+  /* Buttons */
+  .btn {
+    padding: 8px 18px;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
   }
   
-  button:hover {
-    background-color: #45a049;
+  .btn-search,
+  .btn-clear {
+    background-color: #008080;
+    color: #ffffff;
   }
   
-  /* Basic CSS for the report section */
-  h2 {
-    margin-top: 30px;
+  .btn-search:hover,
+  .btn-clear:hover {
+    background-color: #00a896;
   }
   
-  #report,#result {
-    padding: 10px;
-    max-width: 400px;
-    word-wrap: break-word;
-  }
-#result{
-  height: 400px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-  #result img{
-    width: 200px;
-    height: 100px;
+  /* Hero Section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 65px);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=1920') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
   }
   
+  /* Social Media Sidebar */
+  .social-sidebar {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .social-sidebar a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .social-sidebar a:hover {
+    color: #00a896;
+  }
+  
+  /* Hero Content Area */
+  .hero-content {
+    max-width: 500px;
+  }
+  
+  .hero-content h1 {
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .hero-content p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 15px;
+    border-radius: 6px;
+    color: #e0e0e0;
+  }
+  
+  .btn-book {
+    display: inline-block;
+    background-color: #005a5b;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+  }
+  
+  .btn-book:hover {
+    background-color: #008080;
+  }
