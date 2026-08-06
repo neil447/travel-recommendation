@@ -13,11 +13,13 @@
   
   /* Navigation Bar */
   .navbar {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* 3 equal sections: Left, Center, Right */
     align-items: center;
+    width: 100%;
     background-color: #06232b;
     padding: 12px 40px;
+    box-sizing: border-box;
   }
   
   .nav-left {
@@ -34,6 +36,7 @@
     font-weight: bold;
     font-style: italic;
     color: #ffffff;
+    justify-self: start; 
   }
   
   .logo i {
@@ -43,7 +46,10 @@
   .nav-links {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 35px;
+    justify-self: center; 
+    padding: 0;
+    margin: 0;
   }
 
   .nav-linksabout {
@@ -64,20 +70,20 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    transition: color 0.2s ease;
   }
   
-
   .nav-links a:hover {
     color: #00a896;
   }
-  
+
   /* Search Area */
   .search-container {
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-self: end; 
   }
-  
   .search-input-wrapper {
     position: relative;
     display: flex;
