@@ -45,6 +45,19 @@
     list-style: none;
     gap: 25px;
   }
+
+  .nav-linksabout {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+
+  .nav-linksabout a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
   
   .nav-links a {
     color: #ffffff;
@@ -53,6 +66,7 @@
     font-weight: 500;
   }
   
+
   .nav-links a:hover {
     color: #00a896;
   }
